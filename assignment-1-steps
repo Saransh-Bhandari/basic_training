@@ -1,0 +1,61 @@
+1. (Image in readme)
+
+2. git init
+
+3. git remote add origin https://github.com/Saransh-Bhandari/i-am-a-git-noob.gitConnect your Github account
+
+4. git config --list
+
+5. git config --global user.name “Saransh Bhandari”
+git config --global user.email “sbhandari@deqode.com”
+
+6. touch test1.txt
+
+7. echo "first liine in file" > test1.txt
+(Image in readme)
+
+Set Up ssh key for remote repo -
+
+8. git add test1.txt; git commit -m “push1”; git push
+
+9. echo "second line in file" >> test1.txt
+
+10. git add test1.txt
+
+11. git status
+
+12. echo "Third line in file" >> test1.txt
+
+13. git reset test1.txt
+
+14. git commit -m "my first commit"
+
+15. git push
+
+16. git commit --amend -m "My Second Commit"
+
+17. git push
+
+( Used git log to get commit ids )
+
+18. git diff 65ddc849c0ff162faa3e0597c275cf1421fe807c 2b9a1b82da1c6108527bcf15bcbd338b2e68cc27
+
+19. git revert HEAD; git log
+
+20. echo "Fourth line in file" >> test1.txt ;
+
+(Not Done) git add .; git commit -m “commit”
+
+21. echo "Fifth line in file" >> test1.txt; git add . ;git commit --amend --no-edit
+
+22. git push
+
+23. echo "Random content" >> test1.txt
+
+24. git pull
+
+( Changed folder )
+
+25. git clone -b master git@github.com:Saransh-Bhandari/i-am-a-git-noob.git
+(Image in readme)
+(Image in readme)
