@@ -1,0 +1,26 @@
+1. git init
+
+2. git add config user.name "Saransh-Bhandari"
+   git add config user.email "sbhandari@deqode.com"
+   
+3. touch README.md
+
+4. git add .
+
+5. git commit -m "Initial commit"
+
+6. git remote add origin git@github.com:Saransh-Bhandari-basic_training.git
+
+7. git push --set-upstream origin master
+
+8. git checkout -b assignment-1
+
+
+(Added required files)
+9. git add .
+
+10. git commit -m "Updated Readme.md , created images folder for screenshots , add steps"
+
+11. git push --set-upstream origin assignment-1
+
+12. Created PR from github UI and added buddies as reviewers.s
