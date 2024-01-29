@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login-Register Page</title>
+
+    </head>
+    <body>
+        <div id="registration-form"
+            style="display: flex; flex-direction: column; align-items: center">
+            <h2>Registration</h2>
+            
+            <input type="email" id="reg-email" placeholder="Email" required><br>
+            <input type="text" id="reg-username" placeholder="Username"
+                required><br>
+            <input type="password" id="reg-password" placeholder="Password"
+                required><br>
+            <input type="text" id="reg-firstname" placeholder="First Name"
+                required><br>
+            <input type="text" id="reg-lastname" placeholder="Last Name"
+                required><br>
+            <select id="reg-gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br>
+            <select id="reg-role">
+                <option value="admin">Admin</option>
+                <option value="operations">Operations</option>
+                <option value="sales">Sales</option>
+            </select><br>
+            <button onclick="register()">Register</button>
+        </div>
+
+        <hr>
+
+        <div id="login-form"
+            style="display: flex; flex-direction: column; align-items: center">
+            <h2>Login</h2>
+            
+            <input type="text" id="login-username" placeholder="Username"><br>
+            <input type="password" id="login-password"
+                placeholder="Password"><br>
+            <button onclick="login()">Login</button>
+        </div>
+        <hr>
+        <div id="user-list">
+            <h2 style="display: flex; flex-direction: column; align-items: center">User List</h2>
+            <ul id="users" style="display: flex; flex-direction: column; align-items: center"></ul>
+        </div>
+
+        <script>
+        function register() {
+            email= document.getElementById('reg-email').value;
+            username= document.getElementById('reg-username').value;
+            password= document.getElementById('reg-password').value;
+            firstName= document.getElementById('reg-firstname').value;
+            lastName= document.getElementById('reg-lastname').value;
+            gender= document.getElementById('reg-gender').value;
+            role= document.getElementById('reg-role').value;
+
+            if (!email || !username || !password || !firstName || !lastName || !gender || !role) {
+        alert('empty fields');
+        return;
+    }
+            if (localStorage.getItem(username)){
+                document.getElementById('reg-username').value = '';
+                alert('username already exist');
+        return;               
+            }
+    const user = {
+        email: email,
+        username: username,
+        password: password,
+        firstName: firstName,
+        lastName: lastName,
+        gender: gender,
+        role: role
+    };
+
+    localStorage.setItem(user.username, JSON.stringify(user));
+    
+    document.getElementById('reg-email').value = '';
+    document.getElementById('reg-username').value = '';
+    document.getElementById('reg-password').value = '';
+    document.getElementById('reg-firstname').value = '';
+    document.getElementById('reg-lastname').value = '';
+}
+
+function login() {
+    const username = document.getElementById('login-username').value;
+    const password = document.getElementById('login-password').value;
+
+    const user = JSON.parse(localStorage.getItem(username));
+    
+    if (user && user.password === password) {
+        alert('Login successful!');
+        displayUsers(user.role);
+    } else {
+        document.getElementById('login-username')='';
+        document.getElementById('login-password')='';
+        alert('Invalid credentials');
+    }
+    document.getElementById('login-username')='';
+    document.getElementById('login-password')='';
+}
+
+function displayUsers(role) {
+    const userList = document.getElementById('users');
+    userList.innerHTML = '';
+
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        const user = JSON.parse(localStorage.getItem(key));
+
+        if (role === 'admin' || role === user.role) {
+            const li = document.createElement('li');
+            li.textContent = `${user.username} | ${user.firstName} ${user.lastName} - ${user.role}`;
+            userList.appendChild(li);
+        }
+    }
+    
+}
+    </script>
+    </body>
+</html>
