@@ -1,0 +1,75 @@
+Questions -
+You should get through it and implement it in your life.
+● Set clear goals
+● Identify potential problems and opportunities
+● Take initiative
+● Plan and organize
+● Monitor progress
+● Be adaptable
+● Learn from experience
+● Encourage others
+Describe each point & How do you improve that in yourself.
+
+
+Answers -
+● Set clear goals
+Set Clear Goals means knowing what you want to accomplish or what you want to end with. I will take some time to figure out what I want and what are my goals and then that regular action toward them and try to be as efficient as I can. 
+
+● Identify potential problems and opportunities
+Potential problems are the problems that can be foreseen from the current moment which can hinder our progress toward the set goal. And potential opportunities are opportunities that will accelerate to get to the set goal as fast as possible. And to take advantage of these I  have to be more active in day-to-day work to identify potential problems and potential opportunities.
+
+● Take initiative
+Taking initiative means that rather than spending all the time only planning to achieve the goal, taking consistent action toward the set goal is much better.
+
+● Plan and organize
+Planning and organizing means making a proper plan and executing it logically to achieve your set goal, rather than doing random hard work to achieve nothing.
+
+● Monitor progress
+Monitoring progress means measuring the amount of work done compared to a set plan. Monitoring progress is very important as it will help to identify weaknesses in self and in the current set. So that we can adjust accordingly. 
+
+● Be adaptable
+Being adaptable means adapting to the situation accordingly. Being adaptive and making some progress toward the set goal is much better than being rigid and making no progress toward the goal.
+
+● Learn from experience
+Learning from experience means rather than depending on theoretical knowledge which may or may not work for you, it's better to use theoretical knowledge as a base and then do try new approaches to figure out what works and what not.
+
+● Encourage others
+Encouraging others means supporting everyone willing to work hard to achieve their goal rather than being selfish and only focusing on self-growth.
+
+
+
+Questions -
+Here are some steps to effectively use the Googling
+approach:
+● Use specific keywords
+● Check multiple sources
+● Read the documentation
+● Be specific
+● Check the date
+● Try different phrases and synonyms
+● Be open-minded
+Describe above points in brief with examples.
+
+Answer-
+● Use specific keywords
+Use domain-specific keywords to improve search results. (use ‘|’ symbol to find multiple match results )
+
+● Check multiple sources
+We can’t rely on a single source to get our information, instead, we check multiple renowned websites to research the topic.
+
+● Read the documentation
+Out of every website, the main documentation page will contain the most precise information about the searched topics.
+
+● Be specific
+Being specific is useful when you know what you want to search. (use quotes to search specific keywords) (use + - to search or drop on that url)
+
+● Check the date
+As the information updates over time, filtering the information with dates makes more sense. ( dates can be filtered by setting “before: date after:date” in the search query ) 
+
+● Try different phrases and synonyms
+There is a possibility that you can’t find what you are looking for because of keywords so using synonyms may help. ( use ‘~’ before the search word to find the results of its synonyms also  )
+
+● Be open-minded
+As all the information present on the internet might not be true and blindly trusting all of it can be very dangerous we have to keep our minds open and use knowledge and logic for better navigation through false information. 
+
+Example query -” top ~latest | intitle"latest technologies" & (before:2024-01-01 after:2023-01-01)”

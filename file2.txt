@@ -1,8 +1,0 @@
-What is an experiment? 
-It is a test that is done under controlled conditions to test or prove something or discover new knowledge.
-
-What are POCs? 
-POCs are small projects that are created to test, evaluate and demonstrate an idea in real world scenario.
-
-How to report your findings? 
-Report of findings should involve several steps such as organizing the data (steps, other documents of reference) and their results in a well formatted and logical manner to communicate everything effectively.
